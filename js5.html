@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            var arr=[];
+            function age(){
+                var num1=parseInt(document.getElementById('front').value);
+                var num2=parseInt(document.getElementById('last').value);
+                for(i=num1;i<num2;i++){
+                    if(i%2==0 && i%5==0){
+                        arr.push(i);
+                    }
+                }
+                console.log(arr);
+                document.getElementById('lblResult').innerHTML=arr.join(",");
+            }
+        </script>
+    </head>
+    <body>
+        <label>Enter Number</label><br>
+        <label>Form</label><br>
+        <input type="number" id="front"><br>
+        <label>To</label><br>
+        <input type="number" id="last"><br>
+        <button onclick="age()">Result</button><br>
+        <h3 id="lblResult"></h3>
+    </body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function add(){
+                var num1=document.getElementById('number1').value;
+                var num2=document.getElementById('number2').value;
+                var result=parseInt(num1)+parseInt(num2);
+                document.getElementById('lblResult').innerHTML=result;
+                alert('Your result is '+result);
+            }
+            function subtract(){
+                var num1=document.getElementById('number1').value;
+                var num2=document.getElementById('number2').value;
+                var result=parseInt(num1)-parseInt(num2);
+                document.getElementById('lblResult').innerHTML=result;
+                alert('Your result is '+result);
+            }
+            function multiple(){
+                var num1=document.getElementById('number1').value;
+                var num2=document.getElementById('number2').value;
+                var result=parseInt(num1)*parseInt(num2);
+                document.getElementById('lblResult').innerHTML=result;
+                alert('Your result is '+result);
+            }
+            function division(){
+                var num1=document.getElementById('number1').value;
+                var num2=document.getElementById('number2').value;
+                var result=parseInt(num1)/parseInt(num2);
+                document.getElementById('lblResult').innerHTML=result;
+                alert('Your result is '+result);
+            }
+            function addNumber(num1,num2){
+                return num1+num2;
+            }
+            function subtractNumber(num1,num2){
+                return num1-num2;
+            }
+            function MultipleNumber(num1,num2){
+                return num1*num2;
+                function divisionNumber(num1,num2){
+                return num1/num2;
+            }
+            }
+        </script>
+    </head>
+    <body>
+        <label>Number 1:</label><br>
+        <input type="text" id="number1" /><br>
+        <label>Number 2:</label><br>
+        <input type="text" id="number2" />
+        <h3 id="lblResult"></h3>
+        <button onclick="add()">+</button><button onclick="subtract()">-</button><button onclick="multiple()">*</button><button onclick="division()">/</button>
+    </body>
+</html>
